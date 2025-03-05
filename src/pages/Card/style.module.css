@@ -1,0 +1,136 @@
+.cardWrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	width: 100%;
+	max-width: 1200px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 20px;
+}
+
+.fullName {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.details {
+	display: flex;
+	justify-content: start;
+	font-size: 16px;
+	gap: 5px;
+	color: #555;
+}
+
+.noCitizen {
+	font-size: 18px;
+	color: red;
+	text-align: center;
+}
+
+.avatar {
+	height: 250px;
+	width: 250px;
+}
+
+.avatarBlock {
+	width: 250px;
+	height: 250px;
+}
+
+.mainInfoBlock {
+	display: flex;
+	gap: 20px;
+
+	background-color: var(--secondary-color-1);
+	border-radius: 25px;
+}
+
+.citizenInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: center;
+}
+
+.infoBlock {
+	background-color: var(--secondary-color-1);
+	border-radius: 25px;
+	display: flex;
+	padding: 25px;
+	gap: 20px;
+}
+
+.leftColumn {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 50%;
+}
+
+.rightColumn {
+	width: 50%;
+}
+
+.infoRow {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+
+	border-bottom: 1px solid var(--secondary-color-3);
+}
+
+.infoRow p {
+	margin: 0;
+	font-size: 16px;
+	padding: 12px;
+	border-radius: 10px;
+}
+
+.infoRow strong {
+	text-align: start;
+	width: 120px;
+	display: inline-block;
+}
+
+.familyMembersBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.familyMember {
+	display: flex;
+	text-align: start;
+	gap: 20px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.familyAvatarBlock {
+	width: 70px;
+	height: 70px;
+}
+
+.familyAvatar {
+	width: 100%;
+	height: 100%;
+}
+
+.familyInfo {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.familyName {
+	font-size: 18px;
+	font-weight: bold;
+}

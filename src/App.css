@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.App {
+	font-family: 'Inter', serif;
+	text-align: center;
+	display: flex;
+	background-color: var(--background-color);
+}
+
+.contentBlock {
+	box-sizing: border-box;
+	padding-top: 10px;
+	width: calc(100vw - 300px);
+	height: 100vh;
+	overflow-x: hidden;
+}

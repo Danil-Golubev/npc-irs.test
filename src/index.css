@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color: var(--text-color-1);
+}
+li {
+	text-decoration: none;
+}
+strong {
+	color: var(--primary-color);
+}
+
+:root {
+	--primary-color: #0053f3;
+	--background-color: #f0f4f8;
+	--secondary-color-1: white;
+	--secondary-color-2: #e2ecf6;
+	--secondary-color-3: #e6e6e6;
+	--text-color-1: rgb(53, 53, 53);
+	--text-color-2: rgb(255, 255, 255);
+}

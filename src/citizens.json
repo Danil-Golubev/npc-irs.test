@@ -1,0 +1,474 @@
+[
+	{
+		"id": 1,
+		"fullName": "Петров Алексей Васильевич",
+		"birthDate": "1987-08-15",
+		"gender": "Мужской",
+		"address": "г. Санкт-Петербург, ул. Пушкина, д. 45",
+		"phone": "+7 911 234-56-78",
+		"email": "petrov@example.com",
+		"education": "Среднее",
+		"childrenCount": 2,
+		"isSmoker": true,
+		"height": "175",
+		"weight": "80",
+		"hobbies": ["кататься на велосипеде", "плавание"],
+		"familyMembers": [
+			{
+				"name": "Петрова Марина Игоревна",
+				"relation": "Жена",
+				"birthDate": "1990-02-25"
+			},
+			{
+				"name": "Петров Игорь Алексеевич",
+				"relation": "Сын",
+				"birthDate": "2015-10-12"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"fullName": "Смирнов Сергей Викторович",
+		"birthDate": "1992-04-09",
+		"gender": "Мужской",
+		"address": "г. Новосибирск, ул. Лермонтова, д. 10",
+		"phone": "+7 913 345-67-89",
+		"email": "smirnov@example.com",
+		"education": "Высшее",
+		"childrenCount": 0,
+		"isSmoker": false,
+		"height": "180",
+		"weight": "75",
+		"hobbies": ["футбол", "чтение"],
+		"familyMembers": [
+			{
+				"name": "Смирнова Елена Васильевна",
+				"relation": "Мать",
+				"birthDate": "1968-11-19"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"fullName": "Кузнецов Дмитрий Александрович",
+		"birthDate": "1985-06-22",
+		"gender": "Мужской",
+		"address": "г. Екатеринбург, ул. Горького, д. 12",
+		"phone": "+7 909 456-78-90",
+		"email": "kuznetsov@example.com",
+		"education": "Высшее",
+		"childrenCount": 3,
+		"isSmoker": true,
+		"height": "185",
+		"weight": "85",
+		"hobbies": ["велоспорт", "рыбалка"],
+		"familyMembers": [
+			{
+				"name": "Кузнецова Наталья Владимировна",
+				"relation": "Жена",
+				"birthDate": "1988-03-15"
+			},
+			{
+				"name": "Кузнецов Николай Дмитриевич",
+				"relation": "Сын",
+				"birthDate": "2012-07-20"
+			},
+			{
+				"name": "Кузнецова София Дмитриевна",
+				"relation": "Дочь",
+				"birthDate": "2015-11-05"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"fullName": "Захаров Андрей Игоревич",
+		"birthDate": "1989-12-10",
+		"gender": "Мужской",
+		"address": "г. Челябинск, ул. Победы, д. 7",
+		"phone": "+7 951 678-90-12",
+		"email": "zaharov@example.com",
+		"education": "Среднее",
+		"childrenCount": 1,
+		"isSmoker": false,
+		"height": "170",
+		"weight": "70",
+		"hobbies": ["фото", "гитара"],
+		"familyMembers": [
+			{
+				"name": "Захарова Ольга Александровна",
+				"relation": "Жена",
+				"birthDate": "1990-09-03"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"fullName": "Новиков Павел Артемович",
+		"birthDate": "1994-01-14",
+		"gender": "Мужской",
+		"address": "г. Казань, ул. Суворова, д. 33",
+		"phone": "+7 927 890-12-34",
+		"email": "novikov@example.com",
+		"education": "Высшее",
+		"childrenCount": 0,
+		"isSmoker": true,
+		"height": "178",
+		"weight": "77",
+		"hobbies": ["игры", "музыка"],
+		"familyMembers": []
+	},
+	{
+		"id": 6,
+		"fullName": "Лебедев Константин Павлович",
+		"birthDate": "1986-11-04",
+		"gender": "Мужской",
+		"address": "г. Ростов-на-Дону, ул. Гагарина, д. 23",
+		"phone": "+7 929 123-45-67",
+		"email": "lebedev@example.com",
+		"education": "Высшее",
+		"childrenCount": 2,
+		"isSmoker": true,
+		"height": "180",
+		"weight": "78",
+		"hobbies": ["путешествия", "фото"],
+		"familyMembers": [
+			{
+				"name": "Лебедева Анастасия Михайловна",
+				"relation": "Жена",
+				"birthDate": "1989-06-11"
+			},
+			{
+				"name": "Лебедев Максим Константинович",
+				"relation": "Сын",
+				"birthDate": "2014-04-05"
+			}
+		]
+	},
+	{
+		"id": 7,
+		"fullName": "Соловьев Алексей Михайлович",
+		"birthDate": "1988-03-14",
+		"gender": "Мужской",
+		"address": "г. Воронеж, ул. Чехова, д. 17",
+		"phone": "+7 931 234-56-78",
+		"email": "soloviev@example.com",
+		"education": "Среднее",
+		"childrenCount": 1,
+		"isSmoker": false,
+		"height": "172",
+		"weight": "85",
+		"hobbies": ["походы", "спорт"],
+		"familyMembers": [
+			{
+				"name": "Соловьева Ирина Васильевна",
+				"relation": "Мать",
+				"birthDate": "1965-09-02"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"fullName": "Марков Николай Олегович",
+		"birthDate": "1995-07-22",
+		"gender": "Мужской",
+		"address": "г. Нижний Новгород, ул. Белинского, д. 25",
+		"phone": "+7 937 345-67-89",
+		"email": "markov@example.com",
+		"education": "Высшее",
+		"childrenCount": 0,
+		"isSmoker": false,
+		"height": "190",
+		"weight": "92",
+		"hobbies": ["шахматы", "путешествия"],
+		"familyMembers": []
+	},
+	{
+		"id": 9,
+		"fullName": "Сидоров Вячеслав Юрьевич",
+		"birthDate": "1991-06-30",
+		"gender": "Мужской",
+		"address": "г. Уфа, ул. Октября, д. 19",
+		"phone": "+7 938 456-78-90",
+		"email": "sidorov@example.com",
+		"education": "Среднее",
+		"childrenCount": 3,
+		"isSmoker": true,
+		"height": "185",
+		"weight": "88",
+		"hobbies": ["игры", "спорт"],
+		"familyMembers": [
+			{
+				"name": "Сидорова Татьяна Николаевна",
+				"relation": "Жена",
+				"birthDate": "1992-05-12"
+			},
+			{
+				"name": "Сидоров Артем Вячеславович",
+				"relation": "Сын",
+				"birthDate": "2017-02-20"
+			},
+			{
+				"name": "Сидорова Дарина Вячеславовна",
+				"relation": "Дочь",
+				"birthDate": "2020-10-15"
+			}
+		]
+	},
+	{
+		"id": 10,
+		"fullName": "Дмитриев Роман Анатольевич",
+		"birthDate": "1984-10-09",
+		"gender": "Мужской",
+		"address": "г. Калуга, ул. Ленина, д. 50",
+		"phone": "+7 917 567-89-01",
+		"email": "dmitriev@example.com",
+		"education": "Высшее",
+		"childrenCount": 2,
+		"isSmoker": false,
+		"height": "178",
+		"weight": "80",
+		"hobbies": ["гитара", "велосипед"],
+		"familyMembers": [
+			{
+				"name": "Дмитриева Мария Николаевна",
+				"relation": "Жена",
+				"birthDate": "1986-11-18"
+			},
+			{
+				"name": "Дмитриев Алексей Романович",
+				"relation": "Сын",
+				"birthDate": "2013-09-22"
+			}
+		]
+	},
+	{
+		"id": 11,
+		"fullName": "Григорьев Алексей Валерьевич",
+		"birthDate": "1993-12-01",
+		"gender": "Мужской",
+		"address": "г. Тула, ул. Степана Разина, д. 11",
+		"phone": "+7 937 678-90-12",
+		"email": "grigoryev@example.com",
+		"education": "Неоконченное высшее",
+		"childrenCount": 1,
+		"isSmoker": true,
+		"height": "168",
+		"weight": "70",
+		"hobbies": ["программирование", "игры"],
+		"familyMembers": [
+			{
+				"name": "Григорьева Анна Владимировна",
+				"relation": "Жена",
+				"birthDate": "1994-04-25"
+			}
+		]
+	},
+	{
+		"id": 12,
+		"fullName": "Павлов Алексей Дмитриевич",
+		"birthDate": "1982-05-28",
+		"gender": "Мужской",
+		"address": "г. Владимир, ул. Гагарина, д. 34",
+		"phone": "+7 951 789-01-23",
+		"email": "pavlov@example.com",
+		"education": "Среднее",
+		"childrenCount": 2,
+		"isSmoker": false,
+		"height": "182",
+		"weight": "88",
+		"hobbies": ["теннис", "катание на лошадях"],
+		"familyMembers": [
+			{
+				"name": "Павлова Вера Валентиновна",
+				"relation": "Жена",
+				"birthDate": "1985-12-05"
+			},
+			{
+				"name": "Павлов Артем Алексеевич",
+				"relation": "Сын",
+				"birthDate": "2014-03-10"
+			}
+		]
+	},
+	{
+		"id": 13,
+		"fullName": "Петров Сергей Михайлович",
+		"birthDate": "1996-09-04",
+		"gender": "Мужской",
+		"address": "г. Ярославль, ул. Советская, д. 15",
+		"phone": "+7 905 890-12-34",
+		"email": "petrovsergey@example.com",
+		"education": "Высшее",
+		"childrenCount": 0,
+		"isSmoker": true,
+		"height": "175",
+		"weight": "80",
+		"hobbies": ["работа", "спорт"],
+		"familyMembers": []
+	},
+	{
+		"id": 14,
+		"fullName": "Никитин Роман Вячеславович",
+		"birthDate": "1989-04-17",
+		"gender": "Мужской",
+		"address": "г. Челябинск, ул. Карла Маркса, д. 8",
+		"phone": "+7 915 678-90-12",
+		"email": "nikitin@example.com",
+		"education": "Высшее",
+		"childrenCount": 1,
+		"isSmoker": false,
+		"height": "185",
+		"weight": "92",
+		"hobbies": ["игры", "рыбалка"],
+		"familyMembers": [
+			{
+				"name": "Никитина Валентина Романовна",
+				"relation": "Жена",
+				"birthDate": "1990-01-22"
+			}
+		]
+	},
+	{
+		"id": 15,
+		"fullName": "Чернов Владимир Олегович",
+		"birthDate": "1987-12-29",
+		"gender": "Мужской",
+		"address": "г. Нижний Новгород, ул. Мира, д. 40",
+		"phone": "+7 913 234-56-78",
+		"email": "chernov@example.com",
+		"education": "Среднее",
+		"childrenCount": 2,
+		"isSmoker": false,
+		"height": "178",
+		"weight": "83",
+		"hobbies": ["путешествия", "наука"],
+		"familyMembers": [
+			{
+				"name": "Чернова Ирина Игоревна",
+				"relation": "Жена",
+				"birthDate": "1990-11-12"
+			},
+			{
+				"name": "Чернов Денис Владимирович",
+				"relation": "Сын",
+				"birthDate": "2015-05-10"
+			}
+		]
+	},
+	{
+		"id": 16,
+		"fullName": "Рябов Денис Артемович",
+		"birthDate": "1990-02-12",
+		"gender": "Мужской",
+		"address": "г. Самара, ул. Ленина, д. 56",
+		"phone": "+7 917 345-67-89",
+		"email": "ryabov@example.com",
+		"education": "Высшее",
+		"childrenCount": 1,
+		"isSmoker": false,
+		"height": "183",
+		"weight": "76",
+		"hobbies": ["футбол", "туризм"],
+		"familyMembers": [
+			{
+				"name": "Рябова Дарина Александровна",
+				"relation": "Мать",
+				"birthDate": "1965-01-30"
+			}
+		]
+	},
+	{
+		"id": 17,
+		"fullName": "Тимофеев Сергей Васильевич",
+		"birthDate": "1992-08-04",
+		"gender": "Мужской",
+		"address": "г. Ростов-на-Дону, ул. Пушкина, д. 65",
+		"phone": "+7 918 234-56-78",
+		"email": "timofeev@example.com",
+		"education": "Неоконченное высшее",
+		"childrenCount": 1,
+		"isSmoker": true,
+		"height": "179",
+		"weight": "79",
+		"hobbies": ["фото", "музыка"],
+		"familyMembers": [
+			{
+				"name": "Тимофеева Ольга Михайловна",
+				"relation": "Жена",
+				"birthDate": "1993-07-20"
+			}
+		]
+	},
+	{
+		"id": 18,
+		"fullName": "Кузьмин Михаил Павлович",
+		"birthDate": "1985-01-17",
+		"gender": "Мужской",
+		"address": "г. Барнаул, ул. Кирова, д. 3",
+		"phone": "+7 913 678-90-12",
+		"email": "kuzmin@example.com",
+		"education": "Высшее",
+		"childrenCount": 2,
+		"isSmoker": true,
+		"height": "188",
+		"weight": "95",
+		"hobbies": ["катание на сноуборде", "баскетбол"],
+		"familyMembers": [
+			{
+				"name": "Кузьмина Марина Николаевна",
+				"relation": "Жена",
+				"birthDate": "1988-03-30"
+			},
+			{
+				"name": "Кузьмин Алексей Михаилович",
+				"relation": "Сын",
+				"birthDate": "2016-04-05"
+			}
+		]
+	},
+	{
+		"id": 19,
+		"fullName": "Шмидт Николай Петрович",
+		"birthDate": "1983-09-19",
+		"gender": "Мужской",
+		"address": "г. Казань, ул. Пушкина, д. 20",
+		"phone": "+7 922 234-56-78",
+		"email": "shmidt@example.com",
+		"education": "Среднее",
+		"childrenCount": 1,
+		"isSmoker": false,
+		"height": "177",
+		"weight": "81",
+		"hobbies": ["искусство", "кино"],
+		"familyMembers": [
+			{
+				"name": "Шмидт Елена Сергеевна",
+				"relation": "Жена",
+				"birthDate": "1986-05-23"
+			}
+		]
+	},
+	{
+		"id": 20,
+		"fullName": "Александровна Александра Винокурова",
+		"birthDate": "1983-09-19",
+		"gender": "Женский",
+		"address": "г. Казань, ул. Пушкина, д. 20",
+		"phone": "+7 922 234-56-78",
+		"email": "vin@example.com",
+		"education": "Высшее",
+		"childrenCount": 1,
+		"isSmoker": false,
+		"height": "177",
+		"weight": "65",
+		"hobbies": ["искусство", "кино"],
+		"familyMembers": [
+			{
+				"name": "Винокуров Евгений Вячеславович",
+				"relation": "Муж",
+				"birthDate": "1989-05-23"
+			}
+		]
+	}
+]
