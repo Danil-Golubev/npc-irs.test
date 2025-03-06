@@ -1,8 +1,21 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Bar, Pie, Line } from 'react-chartjs-2';
 import styles from './style.module.css';
+import {
+	Chart as ChartJS,
+	ArcElement,
+	Tooltip,
+	Legend,
+	CategoryScale,
+	LinearScale,
+	BarElement,
+	LineElement,
+	PointElement,
+} from 'chart.js';
 
 import citizensData from '../../citizens.json';
+
+ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, LineElement, PointElement);
 
 export const Dashboard = () => {
 	const [citizens, setCitizens] = useState([]);
