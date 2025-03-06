@@ -1,21 +1,8 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Bar, Pie, Line } from 'react-chartjs-2';
 import styles from './style.module.css';
-import {
-	Chart as ChartJS,
-	ArcElement,
-	Tooltip,
-	Legend,
-	CategoryScale,
-	LinearScale,
-	BarElement,
-	LineElement,
-	PointElement,
-} from 'chart.js';
 
 import citizensData from '../../citizens.json';
-
-ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, LineElement, PointElement);
 
 export const Dashboard = () => {
 	const [citizens, setCitizens] = useState([]);
@@ -26,10 +13,10 @@ export const Dashboard = () => {
 
 	// основная статистика
 	const totalCitizens = citizens.length;
-	const avgHeight = (citizens.reduce((sum, c) => sum + Number(c.height), 0) / totalCitizens).toFixed(1);
-	const avgWeight = (citizens.reduce((sum, c) => sum + Number(c.weight), 0) / totalCitizens).toFixed(1);
-	const avgChildren = (citizens.reduce((sum, c) => sum + c.childrenCount, 0) / totalCitizens).toFixed(1);
-	const smokersPercentage = ((citizens.filter((c) => c.isSmoker).length / totalCitizens) * 100).toFixed(1);
+	const avgHeight = (citizens.reduce((sum, citizen) => sum + Number(citizen.height), 0) / totalCitizens).toFixed(1);
+	const avgWeight = (citizens.reduce((sum, citizen) => sum + Number(citizen.weight), 0) / totalCitizens).toFixed(1);
+	const avgChildren = (citizens.reduce((sum, citizen) => sum + citizen.childrenCount, 0) / totalCitizens).toFixed(1);
+	const smokersPercentage = ((citizens.filter((citizen) => citizen.isSmoker).length / totalCitizens) * 100).toFixed(1);
 
 	// график зависимости курения от возраста
 	const smokingByAge = useMemo(() => {
@@ -40,12 +27,12 @@ export const Dashboard = () => {
 			'46+': { smokers: 0, total: 0 },
 		};
 
-		citizens.forEach((c) => {
-			const age = new Date().getFullYear() - new Date(c.birthDate).getFullYear();
+		citizens.forEach((citizen) => {
+			const age = new Date().getFullYear() - new Date(citizen.birthDate).getFullYear();
 			let key =
 				age >= 18 && age <= 25 ? '18-25' : age >= 26 && age <= 35 ? '26-35' : age >= 36 && age <= 45 ? '36-45' : '46+';
 			groups[key].total++;
-			if (c.isSmoker) groups[key].smokers++;
+			if (citizen.isSmoker) groups[key].smokers++;
 		});
 
 		return {
@@ -53,7 +40,9 @@ export const Dashboard = () => {
 			datasets: [
 				{
 					label: 'Процент курящих',
-					data: Object.values(groups).map((g) => (g.total > 0 ? ((g.smokers / g.total) * 100).toFixed(1) : 0)),
+					data: Object.values(groups).map((group) =>
+						group.total > 0 ? ((group.smokers / group.total) * 100).toFixed(1) : 0,
+					),
 					borderColor: '#0053f3',
 					backgroundColor: '#FF6384',
 					fill: false,
@@ -68,8 +57,8 @@ export const Dashboard = () => {
 		datasets: [
 			{
 				data: [
-					citizens.filter((c) => c.gender === 'Мужской').length,
-					citizens.filter((c) => c.gender === 'Женский').length,
+					citizens.filter((citizen) => citizen.gender === 'Мужской').length,
+					citizens.filter((citizen) => citizen.gender === 'Женский').length,
 				],
 				backgroundColor: ['#0053f3', '#f300b6'],
 				borderRadius: 8,
@@ -80,7 +69,7 @@ export const Dashboard = () => {
 		labels: ['Курящие', 'Некурящие'],
 		datasets: [
 			{
-				data: [citizens.filter((c) => c.isSmoker).length, citizens.filter((c) => !c.isSmoker).length],
+				data: [citizens.filter((citizen) => citizen.isSmoker).length, citizens.filter((c) => !c.isSmoker).length],
 				backgroundColor: ['#f300b6', '#0053f3'],
 				borderRadius: 8,
 			},
